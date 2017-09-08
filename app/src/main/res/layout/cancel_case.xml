@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="auth"
+            type="com.octalsoftaware.archi.viewmodals.AuthViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitecolor"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/world1"
+            layout="@layout/customtoolbar" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/txt_submit"
+            android:layout_below="@+id/world1"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.octalsoftaware.archi.utils.CustomTexViewBold
+                    android:id="@+id/txt_patientname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Linder William"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cancelcase"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/strip"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/txt_cancelcases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel_case"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_selectonly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="@string/select_only_one"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_beforeinducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/checkboxbackgroundcolor"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_before"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:button="@drawable/checkbox_select"
+                        android:checked="false"
+                        android:padding="@dimen/_15sdp"
+                        android:text="@string/before_induction"
+                        android:textColor="@color/checkboxtextcolor"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_afterinducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whitecolor"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@color/whitecolor"
+                        android:button="@drawable/checkbox_select"
+                        android:checked="false"
+                        android:padding="@dimen/_15sdp"
+                        android:text="@string/after_induction"
+                        android:textColor="@color/checkboxtextcolor"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/strip"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/txt_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reason"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/txt_selectallapply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="@string/reason_select_all_that_apply"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_system"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/checkboxbackgroundcolor"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_system"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:button="@drawable/checkbox_select"
+                        android:checked="false"
+                        android:padding="@dimen/_15sdp"
+                        android:text="@string/system"
+                        android:textColor="@color/checkboxtextcolor"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_medical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whitecolor"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_medical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@color/whitecolor"
+                        android:button="@drawable/checkbox_select"
+                        android:checked="false"
+                        android:padding="@dimen/_15sdp"
+                        android:text="@string/medical"
+                        android:textColor="@color/checkboxtextcolor"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/checkboxbackgroundcolor"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_patient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:button="@drawable/checkbox_select"
+                        android:checked="false"
+                        android:padding="@dimen/_15sdp"
+                        android:text="@string/patient"
+                        android:textColor="@color/checkboxtextcolor"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <TextView
+            android:id="@+id/txt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/blue_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/submit"
+            android:textColor="@color/whitecolor"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</layout>

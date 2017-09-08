@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitecolor"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/customtoolbar" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.octalsoftaware.archi.utils.CustomTexViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:text="@string/intra_op"
+                android:textColor="@color/intra_op_color"
+                android:textSize="@dimen/_13sdp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+            <com.octalsoftaware.archi.utils.CustomTexViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="@string/post_op"
+                android:textColor="@color/intra_op_color"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/strip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="@string/other_injury"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_4"
+                        android:layout_toRightOf="@+id/checkbox_left_4"
+                        android:gravity="center"
+                        android:text="@string/dental_injury"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_5"
+                        android:layout_toRightOf="@+id/checkbox_left_5"
+                        android:gravity="center"
+                        android:text="@string/corneal_abrasion"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_6"
+                        android:layout_toRightOf="@+id/checkbox_left_6"
+                        android:gravity="center"
+                        android:text="@string/new_pressure_sore_or_breakdown"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_7"
+                        android:layout_toRightOf="@+id/checkbox_left_7"
+                        android:gravity="center"
+                        android:text="@string/eyelid_injury"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_8"
+                        android:layout_toRightOf="@+id/checkbox_left_8"
+                        android:gravity="center"
+                        android:text="@string/laceration_skin_tear"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_9"
+                        android:layout_toRightOf="@+id/checkbox_left_9"
+                        android:gravity="center"
+                        android:text="@string/agitation_reqiring_restrainsts"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_10"
+                        android:layout_toRightOf="@+id/checkbox_left_10"
+                        android:gravity="center"
+                        android:text="@string/patient_fail"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_11"
+                        android:layout_toRightOf="@+id/checkbox_left_11"
+                        android:gravity="center"
+                        android:text="@string/incorrect_surgical_site"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/strip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="@string/other_safety"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_12"
+                        android:layout_toRightOf="@+id/checkbox_left_12"
+                        android:gravity="center"
+                        android:text="@string/unintended_awareness_under_ga"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_13"
+                        android:layout_toRightOf="@+id/checkbox_left_13"
+                        android:gravity="center"
+                        android:text="@string/equipment_malfunction"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/strip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="@string/or_fire_burn"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_14"
+                        android:layout_toRightOf="@+id/checkbox_left_14"
+                        android:gravity="center"
+                        android:text="@string/surface_burn"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_15"
+                        android:layout_toRightOf="@+id/checkbox_left_15"
+                        android:gravity="center"
+                        android:text="@string/airway_fire"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolordark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_left_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_select" />
+
+                    <com.octalsoftaware.archi.utils.CustomTexViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/checkbox_right_16"
+                        android:layout_toRightOf="@+id/checkbox_left_16"
+                        android:gravity="center"
+                        android:text="@string/or_fire"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_right_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:button="@drawable/checkbox_select"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

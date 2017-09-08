@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="auth"
+            type="com.octalsoftaware.archi.viewmodals.AuthViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitecolor"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/customtoolbar" />
+
+
+        <com.octalsoftaware.archi.utils.CustomTexViewBold
+            android:id="@+id/txt_patientname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="Linder William"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graycolordark" />
+
+
+        <RelativeLayout
+            android:id="@+id/rr_invasivelines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whitecolor"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp">
+
+
+            <com.octalsoftaware.archi.utils.CustomTexViewBold
+                android:id="@+id/txt_settingname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toLeftOf="@+id/img_arrow"
+                android:text="@string/invasive_lines"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graycolordark" />
+
+        <RelativeLayout
+            android:id="@+id/rr_post_op_pain_blocks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whitecolor"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp">
+
+
+            <com.octalsoftaware.archi.utils.CustomTexViewBold
+                android:id="@+id/txt_post_op_pain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toLeftOf="@+id/img_arrow1"
+                android:text="@string/post_op_pain"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/img_arrow1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graycolordark" />
+
+        <RelativeLayout
+            android:id="@+id/rr_cardiac_tee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whitecolor"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp">
+
+
+            <com.octalsoftaware.archi.utils.CustomTexViewBold
+                android:id="@+id/txt_cardiac_tee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toLeftOf="@+id/img_arrow2"
+                android:text="@string/cardiac_and_tee"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/img_arrow2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graycolordark" />
+
+        <LinearLayout
+            android:id="@+id/ll_cancelcase"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/strip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <com.octalsoftaware.archi.utils.CustomTexViewBold
+                android:id="@+id/txt_asaphysicalstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+                android:textColor="@color/whitecolor"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_system"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkbox_system"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:button="@drawable/checkbox_select"
+                android:checked="false"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/one_lung_ventillation"
+                android:textColor="@color/checkboxtextcolor"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whitecolor"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkbox_medical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/whitecolor"
+                android:button="@drawable/checkbox_select"
+                android:checked="false"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/controlled_hypotension"
+                android:textColor="@color/checkboxtextcolor"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkbox_patient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:button="@drawable/checkbox_select"
+                android:checked="false"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/special_catheter"
+                android:textColor="@color/checkboxtextcolor"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

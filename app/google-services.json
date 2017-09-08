@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "847657279609",
+    "firebase_url": "https://napa-billing-1492608799971.firebaseio.com",
+    "project_id": "napa-billing-1492608799971",
+    "storage_bucket": "napa-billing-1492608799971.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847657279609:android:d886a3a6e683f916",
+        "android_client_info": {
+          "package_name": "com.octalsoftaware.archi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847657279609-o7m1l453vanlmopoq4vnucl5igs8s6na.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.octalsoftaware.archi",
+            "certificate_hash": "cfce5c38aeedd5cc8e0c186e4d728be6f6a5fc67"
+          }
+        },
+        {
+          "client_id": "847657279609-82qm3vi5e9bmhiklv84buoj84gamhd0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsDJ6vkcXsbD8SAgggM8R2WN3WTbLysO8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847657279609-82qm3vi5e9bmhiklv84buoj84gamhd0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

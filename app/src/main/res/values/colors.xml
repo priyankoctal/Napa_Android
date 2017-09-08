@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@android:color/transparent</color>
+    <color name="colorAccent">@color/login_blue_color</color> <!--#FF4081-->
+    <color name="blackcolor">#000000</color>
+    <color name="greencolor">#509C1A</color>
+    <color name="whitecolor">#FFFFFF</color>
+    <color name="graycolor">#6A6A6A</color>
+    <color name="bordercolor">#D6D6D6</color>
+    <color name="login_blue_color">#75B9E7</color>
+    <color name="graylightcolor">#F4F4F4</color>
+    <color name="bluecolor">#1A3665</color>
+    <color name="hintcolor">#BABABA</color>
+    <color name="graycolordark">#CACACA</color>
+    <color name="checkboxtextcolor">#727272</color>
+    <color name="checkboxbackgroundcolor">#F8F8F8</color>
+    <color name="lightblack">#48494B</color>
+    <color name="red_color">#FF3543</color>
+    <color name="charge_text_color">#8CB6DC</color>
+    <color name="qi_text_color">#6699CE</color>
+    <color name="image_text_color">#FFB459</color>
+    <color name="cancel_text_color">#FB3645</color>
+    <color name="reopen_text_color">#36C470</color>
+    <!-- advance qi option -->
+    <color name="intra_op_color">#4F4F4D</color>
+
+    <!-- image -->
+    <color name="image_background_color">#E0E4E7</color>
+
+</resources>

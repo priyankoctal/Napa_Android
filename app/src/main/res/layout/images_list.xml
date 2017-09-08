@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="auth"
+            type="com.octalsoftaware.archi.viewmodals.AuthViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/whitecolor">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/customtoolbar"/>
+
+        <com.octalsoftaware.archi.utils.CustomTexViewBold
+            android:id="@+id/txt_patientname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="Linder William"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/_20sdp"
+            android:layout_below="@+id/main_toolbar"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/graycolordark"
+            android:layout_below="@+id/txt_patientname"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recylerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:layout_below="@+id/view"
+            android:layout_above="@+id/btn_additional"/>
+
+
+
+        <Button
+            android:id="@+id/btn_additional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bluecolor"
+            android:textColor="@color/whitecolor"
+            android:text="@string/add_additional_image"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+
+    </RelativeLayout>
+</layout>

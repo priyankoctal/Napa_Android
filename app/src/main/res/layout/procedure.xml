@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitecolor"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/customtoolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/recentaglarcornortime"
+                android:hint="@string/code"
+                android:padding="@dimen/_10sdp"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/blackcolor"
+                android:imeOptions="actionDone"/>
+
+            <Spinner
+                android:id="@+id/spinner_mode1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/spinner_bg"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp" />
+
+            <Spinner
+                android:id="@+id/spinner_mode2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/spinner_bg"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp" />
+
+            <Spinner
+                android:id="@+id/spinner_mode3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/spinner_bg"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <FrameLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <com.octalsoftaware.archi.utils.DelayAutoCompleteTextView
+                        android:id="@+id/icd1"
+                        android:inputType="textCapSentences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/recentaglarcornortime"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/icd1"
+                        android:padding="@dimen/_8sdp"
+                        android:cursorVisible="true"
+                        android:textColor="@color/blackcolor"
+                        android:textCursorDrawable="@null"
+                        />
+                    <ProgressBar
+                        android:id="@+id/pb_icd1"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <FrameLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.octalsoftaware.archi.utils.DelayAutoCompleteTextView
+                        android:id="@+id/icd2"
+                        android:inputType="textCapSentences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/recentaglarcornortime"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/icd2"
+                        android:padding="@dimen/_8sdp"
+                        android:cursorVisible="true"
+                        android:textColor="@color/blackcolor"
+                        android:textCursorDrawable="@null"/>
+                    <ProgressBar
+                        android:id="@+id/pb_icd2"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <FrameLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <com.octalsoftaware.archi.utils.DelayAutoCompleteTextView
+                        android:id="@+id/icd3"
+                        android:inputType="textCapSentences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/recentaglarcornortime"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/icd3"
+                        android:padding="@dimen/_8sdp"
+                        android:cursorVisible="true"
+                        android:textColor="@color/blackcolor"
+                        android:textCursorDrawable="@null"/>
+                    <ProgressBar
+                        android:id="@+id/pb_icd3"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <FrameLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ProgressBar
+                        android:id="@+id/pb_icd4"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="gone"/>
+
+                    <com.octalsoftaware.archi.utils.DelayAutoCompleteTextView
+                        android:id="@+id/icd4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/recentaglarcornortime"
+                        android:cursorVisible="true"
+                        android:hint="@string/icd4"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences"
+                        android:padding="@dimen/_8sdp"
+                        android:textColor="@color/blackcolor"
+                        android:textCursorDrawable="@null" />
+                </FrameLayout>
+
+                <!--<AutoCompleteTextView
+                    android:id="@+id/icd3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recentaglarcornortime"
+                    android:hint="@string/icd3"
+                    android:padding="@dimen/_8sdp"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@color/blackcolor"/>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/icd4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recentaglarcornortime"
+                    android:hint="@string/icd4"
+                    android:padding="@dimen/_8sdp"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@color/blackcolor"/>-->
+
+
+            </LinearLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleBackground="#FFFFFF"
+                app:mrl_rippleColor="@color/whitecolor"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleDimension="10dp"
+                app:mrl_rippleDuration="350"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_ripplePersistent="false"
+                android:layout_marginTop="@dimen/_10sdp">
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/bluecolor"
+                android:text="@string/add"
+                android:textColor="@color/whitecolor"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_15sdp"/>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

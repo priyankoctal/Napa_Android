@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.octalsoftaware.archi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:allowBackup">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/place_picker_key" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="bcd8b1697b0a56fd64ebefa21f31c9c4dd8a9e94" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".views.activity.LaunchActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".views.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.activity.CancelCase"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.PatientDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.ChargeInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.InvasiveLinesAndSpecialServices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.InvasiveLinesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.QualityInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.AdvancedQIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.images.ImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.images.ImagesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.CardiacAndTEE"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.PostOpPlainBlocksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.QIAirwayRespiratoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.CardiovascularActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.NeurologicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.RegionalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.PharmacyBloodBank"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.MorbidityMortality"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.ComplianceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.ProceduralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.LowerExtremityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.UpperExtremityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.NEURAXIAL"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.ChestAndAbdomenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.chargeinformation.DiagnosisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.qualityinformation.PatientSafety"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activity.AddPatientActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".views.activity.chargeinformation.ProceduresActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+    </application>
+
+
+</manifest>

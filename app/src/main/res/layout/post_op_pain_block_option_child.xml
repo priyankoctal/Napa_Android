@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/whitecolor">
+
+
+    <CheckBox
+        android:id="@+id/checkbox_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:button="@drawable/checkbox_select"
+        android:checked="false"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/prep_area"
+        android:textColor="@color/checkboxtextcolor"
+        android:textSize="@dimen/_15sdp" />
+
+</LinearLayout>
